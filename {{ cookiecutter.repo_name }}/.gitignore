@@ -1,0 +1,25 @@
+# Temporary files
+*.asv
+*.m~
+
+# Mac Files
+*.DS_Store
+
+# DotEnv configuration
+.env
+
+# Database
+*.db
+*.rdb
+
+# Pycharm
+.idea
+
+# VS Code
+.vscode/
+
+# Spyder
+.spyproject/
+
+# Jupyter NB Checkpoints
+.ipynb_checkpoints/
