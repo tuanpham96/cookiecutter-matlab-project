@@ -46,7 +46,7 @@ case $MLUTILS_CHOSEN_OPT in
     *)
         echo "Nothing is done for https://github.com/tuanpham96/penguin-matlab-utils"
         ;;
-    esac
+esac
 
 
 # Option
@@ -62,8 +62,6 @@ do
     CLONE_DISPLAY="${CLONE_DISPLAY}\e[1m${i}, \e[0m ${CLONE_LIST[${i}]} \n"
 done
 CLONE_DISPLAY="${CLONE_DISPLAY::-2}"
-
-echo -e $CLONE_DISPLAY
 
 CLONE_FZF_PROMPT=$(echo -e "Choose the packages for cloning to EXTPKG.\nThese are optional but are quite useful!")
 CLONE_FZF_HEADER=$(echo -e "   Instructions:\n\t TAB for select multiple options.\n\t ARROWS for navigation.\n\t CLICK on link to go to repo for more detail.\n\t ESC for escape")

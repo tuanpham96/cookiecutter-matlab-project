@@ -12,11 +12,11 @@ This is a `cookiecutter` template for MATLAB projects. Technically this is more 
 ## Dependencies
 
 - [`cookiecutter`][4], preferentially in a `conda` environment (or just any python virtual environment to keep things clean for your system)
-- [`fzf`][5] for selecting options post-generation selections of external packages. Please refer to [5] for installation to specific OSes. Additionally, you could also use `conda` to install `fzf`.
+- [`fzf`][5] for selecting options post-generation selections of external packages. Please refer to [their repo][5] for installation to specific OSes. Additionally, you could also use `conda` to install `fzf`.
 
 ## Instructions
 
-For example, I created a `conda` environment named `cookie-cutter-env`:
+For example, I created a `conda` environment named to remove the submodule, or do it however you're comfortable with.`cookie-cutter-env`:
 
 ``` bash
 # remember to activate your environment
@@ -34,7 +34,7 @@ After the template is done, go through the prompts to install external packages 
 
 ## External packages options
 
-If you accidentally select some packages but you don't want it anymore, just remove it in the `extpkg` (for example by using `rm -rf`). For packages added as a submodule, you can refer to [here](6) to remove the submodule, or do it however you're comfortable with.
+If you accidentally select some packages but you don't want it anymore, just remove it in the `extpkg` (for example by using `rm -rf`). For packages added as a submodule, you can refer to [here][6] to remove the submodule, or do it however you're comfortable with.
 
 If you don't choose any of the above list during the generation step, just simply do a `git clone` or `git submodule add` with the links above in the `extpkg` path.
 
@@ -46,7 +46,7 @@ Currently these are from github repos.
 - [shadedErrorBar][10]: shaded error bars + lines that look nicer than MATLAB built-in error bars
 - [Violinplot-Matlab][11]: beautiful violin plots. I really wish MATLAB would step it up and made these plots one of their standards.
 
-I'm not quite sure yet how to add the ones from *MathworksExchange*.
+I'm not quite sure yet how to add the ones from *MathworksExchange* yet.
 
 ## Template structure
 
