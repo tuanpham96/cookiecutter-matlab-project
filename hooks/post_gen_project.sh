@@ -66,7 +66,7 @@ for i in "${CHOSEN_SUB[@]}"
 do
     git_url="${SUB_LIST[$i]}"
     echo -e "\t + $i--- git remote add & subtree add ${git_url}..."
-    git remote add -f $i "${git_url}"
+    # git remote add -f $i "${git_url}"
     git subtree add --prefix $EXTPKG_DIR/$i "${git_url}" master --squash
 done
 
