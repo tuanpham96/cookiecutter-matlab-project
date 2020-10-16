@@ -48,12 +48,12 @@ done
 SUB_DISPLAY="${SUB_DISPLAY::-2}"
 
 SUB_FZF_PROMPT=$(echo -e "Choose the packages for cloning to EXTPKG.\nThese are optional but are quite useful!")
-SUB_FZF_HEADER=$(echo -e "   Instructions:\n\t
-TAB for select/deselect.\n\t
-CTRL+   A to select all.\n\t
-ARROWS for navigation.\n\t
-CLICK on link to go to repo for more detail.\n\t
-ESC for escape")
+SUB_FZF_HEADER=$(echo -e "   Instructions:
+\tTAB for select/deselect.
+\tCTRL+   A to select all.
+\tARROWS for navigation.
+\tCLICK on link to go to repo for more detail.
+\tESC for escape")
 
 CHOSEN_SUB=($(
     echo -e $SUB_DISPLAY | fzf --multi \
