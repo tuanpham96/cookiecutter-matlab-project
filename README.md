@@ -4,7 +4,9 @@ This is a `cookiecutter` template for MATLAB projects. Technically this is more 
 
 ## TODO
 
-- [ ] Change color scheme of `fzf` default options
+- [ ] Add option to select `git submodule add`, `git substree`, or `git clone` for external packages.
+- [ ] Change color scheme of `fzf` default options.
+- [ ] Add option to create and `exploratory` branch.
 - [ ] Add option to not use external package installation *during* template generation without having to go through the prompt, maybe via some config file?
 - [ ] Add option to download external packages from *MathworksExchange*
 - [ ] Add a script to download and install external packages after template generation.
@@ -36,7 +38,7 @@ After the template is done, go through the prompts to install external packages 
 
 If you accidentally select some packages but you don't want it anymore, just remove it in the `extpkg` (for example by using `rm -rf`). For packages added as a submodule, you can refer to [here][6] to remove the submodule, or do it however you're comfortable with.
 
-If you don't choose any of the above list during the generation step, just simply do a `git clone` or `git submodule add` with the links above in the `extpkg` path.
+If you don't choose any of the above list during the generation step, just simply do a `git clone` or `git submodule add` or `git substree add` (follow [here][12] for more information) with the links above in the `extpkg` path.
 
 Currently these are from github repos.
 
@@ -55,7 +57,7 @@ I'm not quite sure yet how to add the ones from *MathworksExchange* yet.
 ├── data                <-- [dir] data directory; depending on usage, create further subdirectories and update the *.gitignore* and *.gitkeep* files
 ├── demo                <-- [dir] demo scripts to show examples, if needed
 ├── docs                <-- [dir] documents, like references, instructions, some reports
-├── extpkg              <-- [dir] external packages and addons (from github or matlabexchange for example); either download them straight here, clone them, or add as a submodule
+├── extpkg              <-- [dir] external packages and addons (from github or matlabexchange for example); either download them straight here, clone them, or add as a submodule or as subtree
 ├── figures             <-- [dir] figure directory; depending on usage, create further subdirectories
 ├── functions           <-- [dir] source functions to be used for scripts
 ├── reports             <-- [dir] tend to be final reports, or presentations
@@ -75,3 +77,4 @@ I'm not quite sure yet how to add the ones from *MathworksExchange* yet.
 [9]: https://github.com/DylanMuir/ParforProgMon
 [10]: https://github.com/raacampbell/shadedErrorBar
 [11]: https://github.com/bastibe/Violinplot-Matlab
+[12]: https://www.atlassian.com/git/tutorials/git-subtree
