@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# Init repo
+git init
+git add *
+git commit -m "Create repo"
+
+# Create exploratory branch
+git branch exploratory
+git checkout exploratory
+
 # Get necessary parameters
 EXTPKG_DIR='extpkg'
 AUTHOR_NAME='{{ cookiecutter.author_name }}'
@@ -18,7 +27,7 @@ export FZF_DEFAULT_OPTS="--reverse \
         --marker='+'  \
         --no-mouse \
         --info=inline \
-        --bind= 'ctrl-a:select-all' \
+        --bind='ctrl-a:select-all' \
         --color='bg:237,bg+:236,info:143,border:240,spinner:108' \
         --color='hl:65,fg:252,header:65,fg+:252' \
         --color='pointer:161,marker:168,prompt:110,hl+:10'"
