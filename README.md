@@ -7,6 +7,7 @@ This is a `cookiecutter` template for MATLAB projects. Technically this is more 
 - [ ] Add option to select `git submodule add`, `git substree`, or `git clone` for external packages.
 - [ ] Change color scheme of `fzf` default options.
 - [ ] Add option to create and `exploratory` branch.
+- [ ] Update external packages regularly (`fetch` and `git subtree pull`)
 - [ ] Add option to not use external package installation *during* template generation without having to go through the prompt, maybe via some config file?
 - [ ] Add option to download external packages from *MathworksExchange*
 - [ ] Add a script to download and install external packages after template generation.
